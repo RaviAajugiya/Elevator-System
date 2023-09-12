@@ -1,49 +1,111 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
     background-color: rgb(0, 98, 102);
     margin: 0;
     padding: 2.5em;
     font-size: 1.3em;
 }
 
-#main{
-
+#main {
     display: flex;
-    gap: 2em;
     justify-content: space-between;
+    gap: 2em;
 
-    .elevatorArea{
-        width: 20%;        
-        .elevator{
-            height: calc(80vh);
-            background-color: #b1e2ff;
+    .elevatorArea {
+        position: relative;
+        height: calc(80vh);
+        flex-basis: 20em;
+
+    }
+    
+    .elevator {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        background-color: #b1e2ff;
+
+        .el {
+            background-color: #71797e;
+            height: calc(80vh/5 - 2em);
+            width: 6em;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            z-index: 1;
+        }
+
+        div {
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: calc(80vh/5 - 2em);
+        }
+
+
+    }
+}
+
+.switch {
+    text-align: center;
+}
+
+img {
+    width: 2.5em;
+}
+
+
+#control {
+    display: flex;
+    flex-direction: column;
+
+
+    .floorContainer {
+        display: flex;
+        gap: 1em;
+        align-items: center;
+        text-align: center;
+        height: calc(80vh/5);
+
+
+        img {
+            width: 1.2em !important;
+        }
+
+        .floor {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 2em;
+            color: white;
+            width: 2em;
+            height: 2em;
+            background-color: black;
+
+            span {
+                font-size: .9em;
+            }
 
         }
+
     }
 
-    .switch{
-        text-align: center;
-    }
+    .floorbtn {
+        &:hover {
+            background-color: #b1e2ff;
 
-    img{
-        width: 3em;
-    }
-}
+            img {
+                filter: brightness(0);
+            }
+        }
 
-.control{
-    width: 20%;
-
-    .floor{
-        box-sizing: border-box;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 2em;
-        color: white;
-        width: 3em;
-        height: 3em;
-        font-size: 2em;
-        background-color: black;
     }
 }
 
+.switchbtn{
+    display: none;
+}
 
