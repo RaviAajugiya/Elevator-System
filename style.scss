@@ -26,6 +26,11 @@ body {
         gap: 2em;
         background-color: #b1e2ff;
 
+        span{
+            z-index: 5;
+            color: #b1e2ff;
+        }
+
         .el {
             background-color: #71797e;
             height: calc(80vh/5 - 2em);
@@ -35,6 +40,7 @@ body {
             right: 0;
             margin: auto;
             z-index: 1;
+            animation: elevatorAnimation 10s infinite;
         }
 
         div {
@@ -109,3 +115,11 @@ img {
     display: none;
 }
 
+@keyframes elevatorAnimation{
+    from {
+        top:0%;
+    }
+    to{
+        top:100%;
+    }
+}

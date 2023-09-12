@@ -23,6 +23,10 @@ body {
   gap: 2em;
   background-color: #b1e2ff;
 }
+#main .elevator span {
+  z-index: 5;
+  color: #b1e2ff;
+}
 #main .elevator .el {
   background-color: #71797e;
   height: calc(16vh - 2em);
@@ -32,6 +36,7 @@ body {
   right: 0;
   margin: auto;
   z-index: 1;
+  animation: elevatorAnimation 10s infinite;
 }
 #main .elevator div {
   z-index: 2;
@@ -85,4 +90,13 @@ img {
 
 .switchbtn {
   display: none;
+}
+
+@keyframes elevatorAnimation {
+  from {
+    top: 0%;
+  }
+  to {
+    top: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
