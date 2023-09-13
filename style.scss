@@ -3,6 +3,7 @@
     background-color: #006266;
     padding: 30px;
     font-size: 20px;
+    margin: auto;
 }
 
 .box {
@@ -14,7 +15,7 @@
     left: 0;
     right: 0;
     margin: auto;
-    transition: all 1s linear;
+    transition: bottom 1s linear;
 }
 
 .elevator {
@@ -49,7 +50,7 @@
 .switches {
     display: inline-flex;
     justify-content: space-around;
-    width: calc(100% - 65px);
+    width: calc(100% - 105px);
 
     img {
         width: 45px;
@@ -78,6 +79,10 @@
                 background-color: #b1e2ff;
             }
         }
+    }
+
+    .floorbtndown{
+        transform: rotate(180deg);
     }
 }
 
