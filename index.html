@@ -4,101 +4,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elevator System</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <section>
-        <div id="main">
+        <div class="main">
             <div class="elevatorArea">
-                <div class="elevator">
-                    <div><span>5</span></div>
-                    <div><span>4</span></div>
-                    <div><span>3</span></div>
-                    <div><span>2</span></div>
-                    <div><span>1</span></div>
-                    <div id="el4" class="el">
+                <div class="elevator" id="elevator1">
+                    <div>
+                        <div><span>4</span></div>
+                        <div><span>3</span></div>
+                        <div><span>2</span></div>
+                        <div><span>1</span></div>
+                         <div><span>0</span></div>
                     </div>
+                    <div class="box" id="box0"></div>
                 </div>
-                <div class="switch" id="switch1">
-                    <img class="onoff" id="off4" src="icons/switch-on.png" alt="">
-                </div>
-            </div>
-            <div class="elevatorArea">
-                <div class="elevator">
-                    <div><span>5</span></div>
-                    <div><span>4</span></div>
-                    <div><span>3</span></div>
-                    <div><span>2</span></div>
-                    <div><span>1</span></div>
-                    <div id="el3" class="el">
+                <div class="elevator" id="elevator2">
+                    <div>
+                        <div><span>4</span></div>
+                        <div><span>3</span></div>
+                        <div><span>2</span></div>
+                        <div><span>1</span></div>
+                         <div><span>0</span></div>
                     </div>
+                    <div class="box" id="box1"></div>
+
                 </div>
-                <div class="switch">
-                    <img class="onoff" id="off3" src="icons/switch-on.png" alt="">
-                </div>
-            </div>
-            <div class="elevatorArea">
-                <div class="elevator">
-                    <div><span>5</span></div>
-                    <div><span>4</span></div>
-                    <div><span>3</span></div>
-                    <div><span>2</span></div>
-                    <div><span>1</span></div>
-                    <div id="el2" class="el">
+                <div class="elevator" id="elevator3">
+                    <div>
+                        <div><span>4</span></div>
+                        <div><span>3</span></div>
+                        <div><span>2</span></div>
+                        <div><span>1</span></div>
+                         <div><span>0</span></div>
                     </div>
+                    <div class="box" id="box2"></div>
+
                 </div>
-                <div class="switch">
-                    <img class="onoff" id="off2" src="icons/switch-on.png" alt="">
-                </div>
-            </div>
-            <div class="elevatorArea">
-                <div class="elevator">
-                    <div><span>5</span></div>
-                    <div><span>4</span></div>
-                    <div><span>3</span></div>
-                    <div><span>2</span></div>
-                    <div><span>1</span></div>
-                    <div id="el1" class="el">
+                <div class="elevator" id="elevator4">
+                    <div>
+                        <div><span>4</span></div>
+                        <div><span>3</span></div>
+                        <div><span>2</span></div>
+                        <div><span>1</span></div>
+                         <div><span>0</span></div>
                     </div>
+                    <div class="box" id="box3"></div>
+
                 </div>
-                <div class="switch">
-                    <img class="onoff" id="off1" src="icons/switch-on.png" alt="">    
+                <div class="elevator" id="elevator5">
+                    <div>
+                        <div><span>4</span></div>
+                        <div><span>3</span></div>
+                        <div><span>2</span></div>
+                        <div><span>1</span></div>
+                         <div><span>0</span></div>
+                    </div>
+                    <div class="box" id="box4"></div>
+
+                </div>
+                <div class="floors">
+                    <div class="floor">
+                        <span>4</span>
+                        <img id="floor4" class="floorbtn" src="icons/arrow-up.png" alt="">
+                    </div>
+                    <div class="floor" >
+                        <span>3</span>
+                        <img id="floor3" class="floorbtn" src="icons/arrow-up.png" alt="">
+                    </div>
+                    <div class="floor" >
+                        <span>2</span>
+                        <img id="floor2" class="floorbtn" src="icons/arrow-up.png" alt="">
+                    </div>
+                    <div class="floor" >
+                        <span>1</span>
+                        <img id="floor1" class="floorbtn" src="icons/arrow-up.png" alt="">
+                    </div>
+                    <div class="floor" >
+                        <span>0</span>
+                        <img id="floor0" class="floorbtn" src="icons/arrow-up.png" alt="">
+                    </div>
                 </div>
             </div>
 
-
-    
-            <div id="control">
-                <div class="floorContainer">
-                    <div class="floor"><span>5</span></div>
-                    <div class="floor floorbtn">
-                        <img src="icons/arrow-up.png" alt="">
+            <div class="maintenance">
+                <div class="switches">
+                    <div class="switch">
+                        <img src="icons/switch-on.png" alt="" id="switch1">
                     </div>
-                </div>
-                <div class="floorContainer">
-                    <div class="floor"><span>4</span></div>
-                    <div class="floor floorbtn">
-                        <img src="icons/arrow-up.png" alt="">
+                    <div class="switch">
+                        <img src="icons/switch-on.png" alt="" id="switch2">
                     </div>
-                </div>
-                <div class="floorContainer">
-                    <div class="floor"><span>3</span></div>
-                    <div class="floor floorbtn">
-                        <img src="icons/arrow-up.png" alt="">
+                    <div class="switch">
+                        <img src="icons/switch-on.png" alt="" id="switch3">
                     </div>
-                </div>
-                <div class="floorContainer">
-                    <div class="floor"><span>2</span></div>
-                    <div class="floor floorbtn">
-                        <img src="icons/arrow-up.png" alt="">
+                    <div class="switch">
+                        <img src="icons/switch-on.png" alt="" id="switch4">
                     </div>
-                </div>
-                <div class="floorContainer">
-                    <div class="floor"><span>1</span></div>
-                    <div class="floor floorbtn">
-                        <img src="icons/arrow-up.png" alt="">
+                    <div class="switch">
+                        <img src="icons/switch-on.png" alt="" id="switch5">
                     </div>
                 </div>
             </div>
@@ -109,16 +116,3 @@
 </body>
 
 </html>
-
-
-<!-- <!DOCTYPE html>
-<html>
-<head>
-    <title>Image Toggle</title>
-</head>
-<body>
-    <button id="toggleButton">Toggle Image</button>
-    <img id="toggleImage" src="image-off.jpg" alt="Toggled Image">
-    <script src="script.js"></script>
-</body>
-</html> -->
